@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Program</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+<body>
+<h1>Function Programs</h1>
+<script>
+    <!-- 1.factorial program -->
+  function factorial(a){
+    let fact=1;
+	for(var i=1;i<=a;i++)
+	{
+	fact=fact*i;
+	}
+	return(fact);
+	}
+	let factreturn=factorial(5);
+	console.log(factreturn);
+	<!-- factorial program -->
+	
+	
+	
+	<!-- 2.palindrome  number -->
+	function pal(b){
+	  var r,sum=0,temp;
+	  temp=b;
+	  while(b!=0){
+	    r=b%10;
+		sum=(sum*10)+r;
+		b=parseInt(b/10);
+		}
+		if(sum==temp){
+		console.log(sum+" is palindrome number");
+		}
+		else{
+		console.log(sum+" is not a palindrome number");
+		}
+		}
+		pal(151);
+		<!-- palindrome  number -->
+		
+		
+		<!--3. fibonacci series -->
+		function fibo(d){
+		var a=0,b=1,c;
+		console.log(a);
+		console.log(b);
+		for(let i=1;i<=d;i++)
+		{
+		c=a+b;
+		console.log(c);
+		a=b;
+		b=c;
+		}
+		}
+		fibo(7);
+		<!-- fibonacci series -->
+		
+		
+		<!-- 4.prime number -->
+		function prime(number){
+       let prime1 = 1;
+       if (number > 1) {
+       for (let i = 2; i < number; i++) {
+        if (number % i == 0) {
+            prime1 = 0;
+          
+        }
+    }
+    if (prime1==1) {
+        console.log(number+" is a prime number");
+    } else {
+        console.log(number+" is a not prime number");
+    }
+    }
+    }
+    prime(11);
+<!-- prime number -->
+
+
+<!-- 6.area -->
+function rect(b,h){
+let area;
+area=0.5*b*h;
+
+return(area);
+}
+let rectangle=rect(10,25);
+console.log("area of rectangle:"+rectangle);
+
+
+function cir(r){
+let area1;
+const pie=3.14;
+area1=pie*r*r;
+return(area1);
+}
+let circle=cir(10);
+console.log("area of circle:"+circle);
+
+
+function sqr(a){
+let area2;
+area2=a*a;
+return(area2);
+}
+let square=sqr(5);
+console.log("area of square:"+square);
+<!-- area -->
+
+
+<!-- 9.reverse number -->
+function rev(num){
+let ans=" ";
+let i=num;
+while(i>0){
+ans+=i%10;
+i=parseInt(i/10);
+}
+return(ans);
+}
+let reverse=rev(123456);
+console.log("Reversed number:"+reverse);
+<!-- reverse number -->
+
+<!-- 10.armstrong number -->
+    function arm(k){
+	  var r,sum=0,temp;
+	  temp=k;
+	  while(k!=0){
+	    r=k%10;
+		sum=sum+(r*r*r);
+		k=parseInt(k/10);
+		}
+		if(sum==temp){
+		console.log(sum+" is armstrong number");
+		}
+		else{
+		console.log(sum+" is not a armstrong number");
+		}
+		}
+		arm(153);
+		<!-- armstrong number -->
+
+
+	<!-- power -->
+	let num=3;
+	const pov=3;
+	let sum=0;
+	sum=num**pov;
+	console.log(sum);
+	<!-- power -->
+	
+</script>
+</body>
+</html>
